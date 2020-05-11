@@ -1,0 +1,51 @@
+=section-background($backgroundImage)
+  background: url($backgroundImage) no-repeat center top
+  background-position: center center
+  -webkit-background-size: cover
+  background-size: cover
+
+  
+=buttons-style
+  font-size: 14px
+  font-weight: 700
+  text-transform: uppercase
+  color: #fff
+  width: 160px
+  height: 50px
+  border: 1px
+  border-radius: 3px
+  +standart-transition 
+
+=central-title-block($title-color: #000)
+  div.title-block 
+    display: flex
+    flex-direction: column
+    align-items: center
+  
+    h2.title 
+      font-size: 36px
+      font-weight: 600
+      text-align: center
+      color: $title-color
+      padding: 15px 0 30px 0
+
+=left-title-block($margin...)
+  div.title-block 
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    margin: $margin
+  
+    h2.title 
+      font-size: 36px
+      font-weight: 600
+      padding: 10px 0 25px 0
+      margin-left: 3px
+  
+=standart-text
+  font-size: 18px
+  color: #999
+  
+=standart-transition
+  transition: 0.3s
+  -webkit-transition: 0.3s
